@@ -72,22 +72,27 @@
         /* end type js frame work*/
     </script>
     <script>
-        var x = "https://bing.biturl.top/?resolution=1920&format=json&index=0&mkt=zh-CN";
+        var x = "http://www.bing.com/HPImageArchive.aspx?format=xml&idx=0&n=1&mkt=en-US";
 
-        $.ajax({
-            url: x,
-            type: "Get",
-            dataType: "Json",
-            success: function (result) {
-                if (result.success) {
-                    $("#tt").html(result.url);
+        $(function () {
+            $.ajax({
+                type: "GET",
+                url: x,
+                dataType: "xml",
+                success: function (data) {
+                    /* handle data here */
+                    $("#tt").html(data);
+                    alert("done");
+                },
+                error: function (xhr, status) {
+                    /* handle error here */
+                    $("#show_table").html(status);
+                    alert("done");
                 }
-            },
-            error: function () {
-                alert( "error" );
-            }
+            });
         });
     </script>
+
 </body>
 
 </html>
