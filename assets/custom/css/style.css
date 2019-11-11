@@ -1,0 +1,141 @@
+/*----------import part----------*/
+
+/*
+@import url(./Color.css);
+*/
+
+/*end import part*/
+
+
+
+
+
+/*----------custom style part----------*/
+@font-face {
+	font-family: IRANSansDNF;
+	src: url(../../fonts/iransans/IRANSansDNFaNum.ttf);
+	src: url(../../fonts/iransans/IRANSansDNFaNum.woff2);
+}
+
+@media screen and (max-width: 992px) {
+	.img-shape {
+		background: url(../../img/bg/shape1.png) no-repeat !important;
+	}
+
+	.img-wave {
+		background: url(../../img/svg/wave.svg) no-repeat bottom !important;
+	}
+
+	.img-cage {
+		background: url(../../img/bg/cage.png) no-repeat bottom left !important;
+		background-size: 25% !important;
+	}
+
+	.img-intro {
+		display: none !important;
+	}
+
+	.sidebar {
+		display: block !important;
+	}
+
+	.menu {
+		display: none !important;
+	}
+}
+
+@media screen and (min-width: 992px) {
+	.img-shape {
+		background: url(../../img/bg/shape1.png) no-repeat !important;
+	}
+
+	.img-wave {
+		background: url(../../img/svg/wave.svg) no-repeat bottom !important;
+	}
+
+	.img-cage {
+		background: url(../../img/bg/cage.png) no-repeat bottom left !important;
+		background-size: 25% !important;
+	}
+
+	.img-intro {
+		display: block !important;
+	}
+
+	.sidebar {
+		display: none !important;
+	}
+
+	.menu {
+		display: block !important;
+	}
+}
+
+* {
+	font-family: IRANSansDNF;
+	padding: 0 !important;
+	margin: 0 !important;
+	text-decoration: none !important;
+	list-style: none;
+	transition: all 0.3s;
+	text-shadow: 0 0.3rem 0.3rem rgba(0, 0, 0, 0.15) !important;
+}
+
+body {
+	width: 100% !important;
+}
+
+button {
+	cursor: pointer;
+}
+
+footer {
+	box-shadow: 0 -0.1rem 1rem rgba(0, 0, 0, 0.15) !important;
+}
+
+.nowrap {
+	white-space: nowrap;
+}
+
+.fa-15x {
+    font-size: 1.5rem !important;
+}
+
+/*----------end custom style part----------*/
+
+/*ovver writing bootstrap*/
+select:focus {
+	border-color: var(--purple-cety) !important;
+}
+
+button:focus {
+	outline: none;
+	box-shadow: none !important;
+}
+
+select,
+.fa,
+.fas,
+.fab,
+.fal,
+::placeholder {
+	text-shadow: none !important;
+}
+
+.form-control:focus {
+	box-shadow: none;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+	position: unset !important;
+}
+
+
+
+/*end ovver writing bootstrap */
+
+/* Animation on scroll*/
+
+
+/* End Animation on scroll*/
