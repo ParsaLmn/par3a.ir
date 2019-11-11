@@ -58,11 +58,11 @@
             <div>parsa_lmn@yahoo.com</div>
         </div>
     </footer>
-    <p id="tt" class="fa-2x text-danger p-5" style="position: absolute;top: 0;">aa</p>
-    <script>
+
+     <script>
         /* type js frame work*/
         var typed = new Typed("#typing", {
-            strings: ["Coming Soon..."],
+            strings: ["Coming Soon","به زودی"],
             typeSpeed: 100,
             backSpeed: 50,
             backDelay: 1500,
@@ -71,27 +71,7 @@
         });
         /* end type js frame work*/
     </script>
-    <script>
-        var x = "http://www.bing.com/HPImageArchive.aspx?format=xml&idx=0&n=1&mkt=en-US";
 
-        $(function () {
-            $.ajax({
-                type: "GET",
-                url: x,
-                dataType: "xml",
-                success: function (data) {
-                    /* handle data here */
-                    $("#tt").html(data);
-                    alert("done");
-                },
-                error: function (xhr, status) {
-                    /* handle error here */
-                    $("#show_table").html(status);
-                    alert("done");
-                }
-            });
-        });
-    </script>
 
 </body>
 
