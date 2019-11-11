@@ -45,8 +45,8 @@
                 <a href="https://t.me/parsa_lmn" target="_blank">
                     <i class="fa fa-telegram fa-15x text-dark px-2"></i>
                 </a>
-                <a
-                    href="https://ir.linkedin.com/in/parsa-larimian-338738148?trk=people-guest_profile-result-card_result-card_full-click" target="_blank">
+                <a href="https://ir.linkedin.com/in/parsa-larimian-338738148?trk=people-guest_profile-result-card_result-card_full-click"
+                    target="_blank">
                     <i class="fa fa-linkedin fa-15x text-dark px-2"></i>
                 </a>
             </div>
@@ -58,7 +58,7 @@
             <div>parsa_lmn@yahoo.com</div>
         </div>
     </footer>
-
+    <p id="tt" class="fa-2x text-danger p-5" style="position: absolute;top: 0;">aa</p>
     <script>
         /* type js frame work*/
         var typed = new Typed("#typing", {
@@ -70,6 +70,23 @@
             loop: true
         });
         /* end type js frame work*/
+    </script>
+    <script>
+        var x = "https://bing.biturl.top/?resolution=1920&format=json&index=0&mkt=zh-CN";
+
+        $.ajax({
+            url: x,
+            type: "Get",
+            dataType: "Json",
+            success: function (result) {
+                if (result.success) {
+                    $("#tt").html(result.url);
+                }
+            },
+            error: function () {
+                alert( "error" );
+            }
+        });
     </script>
 </body>
 
