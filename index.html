@@ -3,6 +3,7 @@
 
 <head>
     <title>Coming Soon...</title>
+    <link rel="icon" href="./assets/img/icon/icon.ico">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -31,38 +32,52 @@
     </style>
 </head>
 
-<body class=" w-100 h-100">
-    <div class="w-100 h-100 d-flex">
-        <div class="d-flex flex-column w-100 justify-content-center shadow">
-            <div class="row p-4 bg-blur justify-content-center">
-                <h4 id="typing" class="text-white"></h4>
-                <h4 class="text-danger invisible">.</h4>
+<body class="bg-img w-100 h-100">
+    <header style="position: absolute;top: 0;width: 100%;" class="bg-dark-cety shadow">
+        <div class="container mx-auto d-flex flex-row justify-content-between align-items-center">
+            <div class="col-6 col-sm-2">
+                <a href="http://par3a.ir">
+                    <img title="par3a.ir" src="./assets/img/logo/Logo.png" alt="" class="w-100">
+                </a>
             </div>
-            <div class="row p-3 bg-blur justify-content-center">
+            <div class="col-6 col-sm-2 d-flex flex-row justify-content-around">
                 <a href="https://www.instagram.com/parsa_lmn/" target="_blank">
-                    <i class="fa fa-instagram fa-15x text-light px-2"></i>
+                    <i title="instagram" class="fa fa-instagram fa-15x text-myOrange hover-text-white-cety"></i>
                 </a>
                 <a href="https://t.me/parsa_lmn" target="_blank">
-                    <i class="fa fa-paper-plane fa-15x text-light px-2"></i>
+                    <i title="telegram" class="fa fa-paper-plane fa-15x text-myOrange hover-text-white-cety"></i>
                 </a>
                 <a href="https://ir.linkedin.com/in/parsa-larimian-338738148?trk=people-guest_profile-result-card_result-card_full-click"
                     target="_blank">
-                    <i class="fa fa-linkedin fa-15x text-light px-2"></i>
+                    <i title="linkedin" class="fa fa-linkedin fa-15x text-myOrange hover-text-white-cety active-text-white-cety"></i>
                 </a>
             </div>
         </div>
-    </div>
-    <footer style="position: absolute;bottom: 0;width: 100%;">
-        <div class="d-flex justify-content-center p-3 text-white">
-            <div class="">Email: &nbsp;</div>
-            <div>parsa_lmn@yahoo.com</div>
+    </header>
+    <main class="w-100 h-100 d-flex">
+        <div class="d-flex flex-column w-100 justify-content-center shadow">
+            <div class="row p-4 bg-blur justify-content-center">
+                <h4 id="typing" class="text-myOrange"></h4>
+                <h4 class="invisible">.</h4>
+            </div>
+        </div>
+    </main>
+    <footer style="position: absolute;bottom: 0;width: 100%;" class="bg-dark-cety">
+        <div class="container mx-auto py-3 d-flex flex-row justify-content-between align-items-center">
+            <div class="col-12 col-sm-3 d-flex justify-content-center text-myOrange hover-text-white-cety active-text-white-cety">
+                <div class="">Email: &nbsp;</div>
+                <div>parsa_lmn@yahoo.com</div>
+            </div>
+            <small class="col-12 col-sm-3 text-myOrange hover-text-white-cety active-text-white-cety">
+                2019 Par3a All rights reserved
+            </small>
         </div>
     </footer>
 
-     <script>
+    <script>
         /* type js frame work*/
         var typed = new Typed("#typing", {
-            strings: ["Coming Soon","به زودی"],
+            strings: ["Coming Soon", "به زودی"],
             typeSpeed: 100,
             backSpeed: 50,
             backDelay: 1500,
