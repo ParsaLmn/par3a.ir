@@ -17,56 +17,14 @@
 	src: url(../../fonts/iransans/IRANSansDNFaNum.woff2);
 }
 
-@media screen and (max-width: 992px) {
-	.img-shape {
-		background: url(../../img/bg/shape1.png) no-repeat !important;
-	}
-
-	.img-wave {
-		background: url(../../img/svg/wave.svg) no-repeat bottom !important;
-	}
-
-	.img-cage {
-		background: url(../../img/bg/cage.png) no-repeat bottom left !important;
-		background-size: 25% !important;
-	}
-
-	.img-intro {
-		display: none !important;
-	}
-
-	.sidebar {
-		display: block !important;
-	}
-
-	.menu {
+@media screen and (max-width: 556px) {
+	#smalltxt {
 		display: none !important;
 	}
 }
 
-@media screen and (min-width: 992px) {
-	.img-shape {
-		background: url(../../img/bg/shape1.png) no-repeat !important;
-	}
-
-	.img-wave {
-		background: url(../../img/svg/wave.svg) no-repeat bottom !important;
-	}
-
-	.img-cage {
-		background: url(../../img/bg/cage.png) no-repeat bottom left !important;
-		background-size: 25% !important;
-	}
-
-	.img-intro {
-		display: block !important;
-	}
-
-	.sidebar {
-		display: none !important;
-	}
-
-	.menu {
+@media screen and (min-width: 556px) {
+	#smalltxt {
 		display: block !important;
 	}
 }
